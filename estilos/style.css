@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #102B53;
+    --cor-lavanda: #DEC1DB;
+    --cor-ciano: #4E7AB1;
+}
+
+header {
+    background-color: var(--cor-fundo);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+nav#menu ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav#menu ul li a {
+    color: var(--cor-lavanda);
+    text-decoration: none;
+}
+
+nav#menu ul li a:hover {
+    background-color: var(--cor-ciano);
+    
+}
