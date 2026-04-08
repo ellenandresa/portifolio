@@ -10,6 +10,10 @@
     --cor-ciano: #4E7AB1;
 }
 
+body, html {
+    background-color: var(--cor-fundo);
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
@@ -19,7 +23,7 @@ main {
 
 nav#menu ul {
     background-color: var(--cor-fundo);
-    border-radius: 10px;
+    border-radius: 10px var(--cor-ciano);
     padding-right: 10px;
     list-style: none;
     display: flex;
