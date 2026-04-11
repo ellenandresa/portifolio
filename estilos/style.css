@@ -8,10 +8,37 @@
     --cor-fundo: #102B53;
     --cor-lavanda: #DEC1DB;
     --cor-ciano: #4E7AB1;
+    --cor-claro: #7D9FC0;
 }
 
 body, html {
     background-color: var(--cor-fundo);
+}
+
+nav#menu {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+nav#menu ul {
+    background-color: var(--cor-fundo);
+    border-radius: 10px var(--cor-ciano);
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav#menu ul li a {
+    color: var(--cor-lavanda);
+    text-decoration: none;
+}
+
+nav#menu ul li a:hover {
+    color: var(--cor-claro);
+    
 }
 
 main {
@@ -21,23 +48,9 @@ main {
     margin-top: 20px;
 }
 
-nav#menu ul {
-    background-color: var(--cor-fundo);
-    border-radius: 10px var(--cor-ciano);
-    padding-right: 10px;
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav#menu ul li a {
-    color: var(--cor-lavanda);
-    text-decoration: none;
-}
-
-nav#menu ul li a:hover {
-    background-color: var(--cor-ciano);
-    
+section#ficha {
+    margin-top: 40px;
+    grid-column: 2;
 }
 
 section#ficha img.foto {
@@ -45,8 +58,15 @@ section#ficha img.foto {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
+    border: 4px solid var(--cor-fundo);
+    outline: 3px solid var(--cor-lavanda);
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
 }
 
 section#ficha h1 {
     color: var(--cor-lavanda);
+    margin-bottom: 15px;
+    text-align: center;
 }
